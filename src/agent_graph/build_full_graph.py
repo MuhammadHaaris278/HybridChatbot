@@ -66,7 +66,11 @@ def build_graph():
              query_chinook_sqldb,
              ]
     # Tell the LLM which tools it can call
-    primary_llm_with_tools = primary_llm.bind_tools(tools)
+    primary_llm_with_tools = ChatOpenAI(
+    base_url="https://models.github.ai/inference",
+    api_key=os.getenv("OPEN_AI_API_KEY"),
+    model="openai/gpt-4o-mini"
+)
 
     def chatbot(state: State):
         """Executes the primary language model with tools bound and returns the generated message."""
