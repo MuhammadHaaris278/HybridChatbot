@@ -8,6 +8,10 @@ from langchain_core.runnables import RunnablePassthrough
 from operator import itemgetter
 from langchain_core.tools import tool
 from agent_graph.load_tools_config import LoadToolsConfig
+import os
+from dotenv import load_dotenv
+
+load_dotenv()
 
 TOOLS_CFG = LoadToolsConfig()
 
@@ -83,7 +87,11 @@ class ChinookSQLAgent:
             llm_temerature (float): The temperature value for the LLM, determining the randomness of the model's output.
         """
         self.sql_agent_llm = ChatOpenAI(
-            model=llm, temperature=llm_temerature)
+            model=f"openai/{llm}",
+            temperature=llm_temerature,
+            base_url="https://models.github.ai/inference",
+            api_key=os.getenv("OPEN_AI_API_KEY")
+        )
 
         self.db = SQLDatabase.from_uri(f"sqlite:///{sqldb_directory}")
         print(self.db.get_usable_table_names())

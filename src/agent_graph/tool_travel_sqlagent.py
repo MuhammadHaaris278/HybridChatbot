@@ -8,6 +8,10 @@ from langchain_core.runnables import RunnablePassthrough
 from operator import itemgetter
 from langchain_openai import ChatOpenAI
 from agent_graph.load_tools_config import LoadToolsConfig
+import os
+from dotenv import load_dotenv
+
+load_dotenv()
 
 TOOLS_CFG = LoadToolsConfig()
 
@@ -40,7 +44,11 @@ class TravelSQLAgentTool:
             llm_temerature (float): The temperature setting for the language model, controlling response randomness.
         """
         self.sql_agent_llm = ChatOpenAI(
-            model=llm, temperature=llm_temerature)
+            model=f"openai/{llm}",
+            temperature=llm_temerature,
+            base_url="https://models.github.ai/inference",
+            api_key=os.getenv("OPEN_AI_API_KEY")
+        )
         self.system_role = """Given the following user question, corresponding SQL query, and SQL result, answer the user question.\n
             Question: {question}\n
             SQL Query: {query}\n
