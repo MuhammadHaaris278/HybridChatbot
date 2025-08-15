@@ -2,6 +2,10 @@ from langchain_chroma import Chroma
 from langchain_openai import OpenAIEmbeddings
 from langchain_core.tools import tool
 from agent_graph.load_tools_config import LoadToolsConfig
+import os
+from dotenv import load_dotenv
+
+load_dotenv()
 
 TOOLS_CFG = LoadToolsConfig()
 
@@ -41,7 +45,11 @@ class StoriesRAGTool:
         self.vectordb = Chroma(
             collection_name=collection_name,
             persist_directory=self.vectordb_dir,
-            embedding_function=OpenAIEmbeddings(model=self.embedding_model)
+            embedding_function=OpenAIEmbeddings(
+                model=f"openai/{self.embedding_model}",
+                base_url="https://models.github.ai/inference",
+                api_key=os.getenv("OPEN_AI_API_KEY")
+            )
         )
         print("Number of vectors in vectordb:",
               self.vectordb._collection.count(), "\n\n")

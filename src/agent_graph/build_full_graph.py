@@ -8,6 +8,10 @@ from agent_graph.tool_tavily_search import load_tavily_search_tool
 from agent_graph.tool_stories_rag import lookup_stories
 from agent_graph.load_tools_config import LoadToolsConfig
 from agent_graph.agent_backend import State, BasicToolNode, route_tools, plot_agent_schema
+import os
+from dotenv import load_dotenv
+
+load_dotenv()
 
 TOOLS_CFG = LoadToolsConfig()
 
@@ -46,8 +50,12 @@ def build_graph():
         - `route_tools`: A conditional function to determine whether the chatbot should call a tool.
         - `graph`: The complete graph with nodes and conditional edges.
     """
-    primary_llm = ChatOpenAI(model=TOOLS_CFG.primary_agent_llm,
-                             temperature=TOOLS_CFG.primary_agent_llm_temperature)
+    primary_llm = ChatOpenAI(
+        model=f"openai/{TOOLS_CFG.primary_agent_llm}",
+        temperature=TOOLS_CFG.primary_agent_llm_temperature,
+        base_url="https://models.github.ai/inference",
+        api_key=os.getenv("OPEN_AI_API_KEY")
+    )
     graph_builder = StateGraph(State)
     # Load tools with their proper configs
     search_tool = load_tavily_search_tool(TOOLS_CFG.tavily_search_max_results)
@@ -58,7 +66,11 @@ def build_graph():
              query_chinook_sqldb,
              ]
     # Tell the LLM which tools it can call
-    primary_llm_with_tools = primary_llm.bind_tools(tools)
+    primary_llm_with_tools = ChatOpenAI(
+    base_url="https://models.github.ai/inference",
+    api_key=os.getenv("OPEN_AI_API_KEY"),
+    model="openai/gpt-4o-mini"
+)
 
     def chatbot(state: State):
         """Executes the primary language model with tools bound and returns the generated message."""
