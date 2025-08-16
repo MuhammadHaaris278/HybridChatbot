@@ -58,3 +58,14 @@ Both cases require close monitoring and intervention, but Ayesha Malik's elevate
 I used the **tavily_search_results_json** tool to retrieve this information from the web."
 1,13:44:06,hey,Hello! How can I assist you today?
 1,13:54:52,hey,Hello! How can I assist you today?
+1,14:05:59,"hey, fetch me all the patients over the age of 30","Here are the patients over the age of 30 based on the clinical notes:
+
+1. **Ayesha Malik** – Diagnosed with hypertension in May 2025. Reports intermittent headaches and dizziness. Blood pressure readings range between 150/95 and 165/100 mmHg. Advised on lifestyle changes and medication adherence.
+
+2. **Zeeshan Ali** – Long-standing hypertension diagnosed in April 2025. Experiences occasional blurred vision and fatigue. Blood pressure averages 155/98 mmHg. Counseled on stress reduction and medication compliance.
+
+3. **Imran Qureshi** – Diagnosed with migraines in September 2024. Experiences severe headaches with visual auras about three times per month. Referred for neurology review.
+
+4. **Fatima Khan** – Hypertension diagnosed in March 2025. Reports mild headaches twice a week. Blood pressure ranges between 145/92 and 152/96 mmHg. Advised on lifestyle changes and medication review.
+
+Let me know if you need further details!"
