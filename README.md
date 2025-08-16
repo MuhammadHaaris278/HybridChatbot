@@ -56,7 +56,7 @@ To set up the project, follow these steps:
    ```
 Open the Gradio URL generated in the terminal and start chatting.
 
-*Sample questions are available in `sample_questions.txt`.*
+*Sample questions are available in `SampleQuestions.txt`.*
 
 ---
 
