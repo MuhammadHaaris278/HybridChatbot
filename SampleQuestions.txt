@@ -1,0 +1,7 @@
+Question: "What are the symptoms mentioned in the clinical note for Ayesha Malik?"
+
+Question: "What symptoms are listed in the clinical notes for patients with upper respiratory infections?"
+
+Question: "What treatments are recommended in Ayesha Malik’s clinical note?"
+
+Question: "What are the latest treatments for upper respiratory infections?"
