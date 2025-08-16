@@ -1,9 +1,9 @@
 from langgraph.checkpoint.memory import MemorySaver
 from langgraph.graph import StateGraph, START
 from langchain_openai import ChatOpenAI
-from agent_graph.tool_travel_sqlagent import query_travel_sqldb
 from agent_graph.tool_clinical_notes_rag import lookup_clinical_notes
 from agent_graph.tool_tavily_search import load_tavily_search_tool
+from agent_graph.tool_hospital_sqlagent import query_hospital_database
 from agent_graph.load_tools_config import LoadToolsConfig
 from agent_graph.agent_backend import State, BasicToolNode, route_tools, plot_agent_schema
 import os
@@ -59,7 +59,7 @@ def build_graph():
     search_tool = load_tavily_search_tool(TOOLS_CFG.tavily_search_max_results)
     tools = [search_tool,
              lookup_clinical_notes,
-             query_travel_sqldb,
+             query_hospital_database,
              ]
     # Tell the LLM which tools it can call by binding tools
     primary_llm_with_tools = primary_llm.bind_tools(tools)
@@ -73,7 +73,7 @@ def build_graph():
         tools=[
             search_tool,
             lookup_clinical_notes,
-            query_travel_sqldb,
+            query_hospital_database,
         ])
     graph_builder.add_node("tools", tool_node)
     # The `tools_condition` function returns "tools" if the chatbot asks to use a tool, and "__end__" if

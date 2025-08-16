@@ -14,14 +14,9 @@ clinical_notes_rag:
   collection_name: clinical-notes-qdrant
   qdrant_url: null
 
-travel_sqlagent_configs:
-  travel_sqldb_dir: "data/travel.sqlite"
-  llm: openai/gpt-3.5-turbo
-  llm_temperature: 0.0
-  
-chinook_sqlagent_configs:
-  chinook_sqldb_dir: "data/Chinook.db"
-  llm: openai/gpt-3.5-turbo
+
+hospital_sqlagent_configs:
+  llm: gpt-4o-mini
   llm_temperature: 0.0
 
 langsmith:
