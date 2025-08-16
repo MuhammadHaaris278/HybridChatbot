@@ -2,27 +2,17 @@ primary_agent:
   llm: openai/gpt-4o
   llm_temperature: 0.0
 
-swiss_airline_policy_rag:
-  unstructured_docs: "data/unstructured_docs/swiss_airline_policy"
-  vectordb: "data/airline_policy_vectordb"
-  collection_name: rag-chroma
+clinical_notes_rag:
   llm: openai/gpt-4o
-  llm_temperature: 0.0
+  llm_temperature: 0.7
   embedding_model: openai/text-embedding-3-small
-  chunk_size: 500
-  chunk_overlap: 100
-  k: 2
-
-stories_rag:
-  unstructured_docs: "data/unstructured_docs/stories"
-  vectordb: "data/stories_vectordb"
-  collection_name: stories-rag-chroma
-  llm: openai/gpt-4o
-  llm_temperature: 0.0
-  embedding_model: openai/text-embedding-3-small
-  chunk_size: 500
-  chunk_overlap: 100
-  k: 2
+  vectordb: data/clinical_notes_vectordb
+  unstructured_docs: data/unstructured_docs/clinical_notes
+  k: 4
+  chunk_size: 1000
+  chunk_overlap: 200
+  collection_name: clinical-notes-qdrant
+  qdrant_url: null
 
 travel_sqlagent_configs:
   travel_sqldb_dir: "data/travel.sqlite"
