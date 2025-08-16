@@ -159,3 +159,82 @@ If you need further details or clarification, let me know!"
    - Regular monitoring and consultations with healthcare providers.
 
 If you need more specific details or guidance, let me know!"
+1,15:13:36,Which patients of mine are facing glucose problems,"Here are the patients facing glucose-related problems:
+
+1. **Sadia Rehman**:
+   - Diagnosed with Type 2 Diabetes in January 2025.
+   - Elevated fasting glucose levels averaging 160–180 mg/dL.
+   - Mild peripheral neuropathy symptoms in both feet.
+   - Counseling focused on dietary adjustments, regular walking, and consistent blood glucose monitoring.
+   - Consideration for adding a second oral hypoglycemic agent if control remains inadequate in two months.
+
+2. **Hassan Riaz**:
+   - History of Type 2 Diabetes since October 2023.
+   - Glycemic control inconsistent, with postprandial readings often exceeding 200 mg/dL.
+   - Reports occasional blurred vision and slow healing of minor cuts.
+   - Educated on foot care and importance of annual retinal examination.
+   - Advised to increase compliance with medications and reduce sugary snack consumption.
+   - Next review scheduled in one month.
+
+3. **Omar Farooq**:
+   - Diagnosed with Type 2 Diabetes in February 2025.
+   - Reports polyuria, polydipsia, and increased fatigue.
+   - Latest HbA1c reading was 8.2%, indicating suboptimal glycemic control.
+   - Diet high in refined carbohydrates noted.
+   - Educated on low-glycemic index foods, regular exercise, and adherence to metformin therapy.
+   - Blood sugar monitoring recommended twice daily, with follow-up in six weeks.
+
+Let me know if you need further details or assistance with their management plans."
+1,15:27:12,"Can you give me my patients who have diabetes and their appointments are scheduled on 02 August, 2025 at 3pm","It seems there is no available information regarding patients diagnosed with diabetes who have appointments scheduled on 02 August, 2025, at 3 PM. If you need further assistance, feel free to ask!"
+1,15:28:45,"Can you give me my patients who have diabetes and their appointments are scheduled on 04 August, 2025 at 3pm","The patient diagnosed with diabetes who has an appointment scheduled on 04 August, 2025, at 3 PM is:
+
+- **Name:** Sadia Rehman
+
+Let me know if you need further details!"
+1,15:29:59,Can you give me all the appointments for Ayesha Malik,"The appointments for Ayesha Malik are as follows:
+
+- **Appointment ID:** 1
+- **Doctor ID:** 5
+- **Date and Time:** 01 August, 2025, at 10:00 AM
+- **Status:** Completed
+
+Let me know if you need further details!"
+1,15:30:41,Which patient has the most critical condition right now?,"Based on the clinical notes, the patient with the most critical condition appears to be **Ayesha Malik**, who has hypertension with blood pressure readings ranging between 150/95 and 165/100 mmHg. She reports intermittent headaches and episodes of dizziness, which are concerning symptoms. Her condition requires close monitoring and adjustments to her treatment plan.
+
+Let me know if you need further details or assistance!"
+1,15:31:33,What are the for top 3 symptoms of diabetes,"The top 3 common symptoms of diabetes are:
+
+1. **Increased Thirst and Frequent Urination**:
+   - High blood sugar levels cause the kidneys to work harder to filter and absorb the excess sugar, leading to increased thirst (polydipsia) and frequent urination (polyuria).
+
+2. **Unexplained Weight Loss**:
+   - Despite eating normally or even more than usual, individuals with diabetes may lose weight due to the body breaking down fat and muscle for energy when it cannot use glucose effectively.
+
+3. **Fatigue**:
+   - High blood sugar levels can impair the body's ability to use glucose for energy, leading to persistent tiredness and lack of energy.
+
+Let me know if you'd like more details or additional symptoms!"
+1,15:32:07,Search the web for top 3 diabetes symptoms,"Based on the web search, the top 3 symptoms of diabetes are:
+
+1. **Excessive Thirst (Polydipsia)**:
+   - Feeling extremely thirsty even after drinking water, often due to high blood sugar levels.
+
+2. **Frequent Urination (Polyuria)**:
+   - Increased urination as the body tries to eliminate excess sugar through the urine.
+
+3. **Extreme Hunger (Polyphagia)**:
+   - Experiencing extreme hunger even after eating, caused by the body's inability to properly use glucose for energy.
+
+Let me know if you'd like more details!"
+1,15:33:29,Can you give me all the appointments for Fatima Khan and which patient has the most critical condition right now?,"### Appointments for Fatima Khan:
+- **Appointment ID:** 3
+- **Doctor ID:** 5
+- **Date and Time:** 03 August, 2025, at 9:45 AM
+- **Status:** Scheduled
+
+---
+
+### Patient with the Most Critical Condition:
+Based on the clinical notes, **Ayesha Malik** appears to have the most critical condition. She has hypertension with blood pressure readings ranging between 150/95 and 165/100 mmHg, along with symptoms like intermittent headaches and dizziness. These symptoms require close monitoring and adjustments to her treatment plan.
+
+Let me know if you need further details!"

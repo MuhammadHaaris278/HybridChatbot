@@ -38,19 +38,10 @@ class LoadToolsConfig:
         self.clinical_notes_rag_collection_name = app_config["clinical_notes_rag"]["collection_name"]
         self.clinical_notes_rag_qdrant_url = app_config["clinical_notes_rag"]["qdrant_url"]
 
-        # Travel SQL Agent configs
-        self.travel_sqldb_directory = str(here(
-            app_config["travel_sqlagent_configs"]["travel_sqldb_dir"]))
-        self.travel_sqlagent_llm = app_config["travel_sqlagent_configs"]["llm"]
-        self.travel_sqlagent_llm_temperature = float(
-            app_config["travel_sqlagent_configs"]["llm_temperature"])
-
-        # Chinook SQL agent configs
-        self.chinook_sqldb_directory = str(here(
-            app_config["chinook_sqlagent_configs"]["chinook_sqldb_dir"]))
-        self.chinook_sqlagent_llm = app_config["chinook_sqlagent_configs"]["llm"]
-        self.chinook_sqlagent_llm_temperature = float(
-            app_config["chinook_sqlagent_configs"]["llm_temperature"])
+        # Hospital SQL agent configs
+        self.hospital_sqlagent_llm = app_config["hospital_sqlagent_configs"]["llm"]
+        self.hospital_sqlagent_llm_temperature = float(
+            app_config["hospital_sqlagent_configs"]["llm_temperature"])
 
         # Graph configs
         self.thread_id = str(
