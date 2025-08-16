@@ -1,22 +1,14 @@
 
 ---
-Hybrid chatbot done
 # AgentGraph: Intelligent SQL-agent Q&A and RAG System for Chatting with Multiple Databases
 
 This project demonstrates how to build an agentic system using Large Language Models (LLMs) that can interact with multiple databases and utilize various tools. It highlights the use of SQL agents to efficiently query large databases. The key frameworks used in this project include OpenAI, LangChain, LangGraph, LangSmith, and Gradio. The end product is an end-to-end chatbot, designed to perform these tasks, with LangSmith used to monitor the performance of the agents.
 
 ---
 
-## Video Explanation: 
-A detailed explanation of the project is available in the following YouTube video:
-
-Automating LLM Agents to Chat with Multiple/Large Databases (Combining RAG and SQL Agents): [Link](https://youtu.be/xsCedrNP9w8?si=v-3k-BoDky_1IRsg)
-
----
-
 ## Requirements
 
-- **Operating System:** Linux or Windows (Tested on Windows 11 with Python 3.9.11)
+- **Operating System:** Linux or Windows (Tested on Windows 11 with Python 3.9.11 or above)
 - **OpenAI API Key:** Required for GPT functionality.
 - **Tavily Credentials:** Required for search tools (Free from your Tavily profile).
 - **LangChain Credentials:** Required for LangSmith (Free from your LangChain profile).
@@ -85,58 +77,6 @@ All configurations are managed through YAML files in the `configs` folder, loade
 
 Once your databases are ready, you can either connect the current agents to the databases or create new agents. More details can be found in the accompanying YouTube video.
 
----
-
-## Project Schemas
-
-### High-level overview
-
-<div align="center">
-  <img src="images/high-level.png" alt="high-level">
-</div>
-
-### Detailed Schema
-
-<div align="center">
-  <img src="images/detailed_schema.png" alt="detailed_schema">
-</div>
-
-### Graph Schema
-
-<div align="center">
-  <img src="images/graph_image.png" alt="graph_image">
-</div>
-
-### SQL-agent for large databases strategies
-
-<div align="center">
-  <img src="images/large_db_strategy.png" alt="large_db_strategy">
-</div>
-
----
-
-## Chatbot User Interface
-
-<div align="center">
-  <img src="images/UI.png" alt="ChatBot UI">
-</div>
-
----
-
-## LangSmith Monitoring System
-
-<div align="center">
-  <img src="images/langsmith.png" alt="langsmith">
-</div>
-
----
-
-## Databases Used
-
-- **Travel SQL Database:** [Kaggle Link](https://www.kaggle.com/code/mpwolke/airlines-sqlite)
-- **Chinook SQL Database:** [Sample Database](https://database.guide/2-sample-databases-sqlite/)
-- **stories VectorDB**
-- **Airline Policy FAQ VectorDB**
 ---
 
 ## Key Frameworks and Libraries
