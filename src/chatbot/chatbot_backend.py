@@ -6,9 +6,6 @@ from utils.app_utils import create_directory
 from chatbot.memory import Memory
 from langchain_core.messages import SystemMessage, HumanMessage, AIMessage
 
-URL = "https://github.com/Farzad-R/LLM-Zero-to-Hundred/tree/master/RAG-GPT"
-hyperlink = f"[RAG-GPT user guideline]({URL})"
-
 PROJECT_CFG = LoadProjectConfig()
 TOOLS_CFG = LoadToolsConfig()
 
