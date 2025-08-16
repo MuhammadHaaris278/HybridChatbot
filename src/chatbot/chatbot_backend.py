@@ -4,6 +4,7 @@ from agent_graph.load_tools_config import LoadToolsConfig
 from agent_graph.build_full_graph import build_graph
 from utils.app_utils import create_directory
 from chatbot.memory import Memory
+from langchain_core.messages import SystemMessage, HumanMessage, AIMessage
 
 URL = "https://github.com/Farzad-R/LLM-Zero-to-Hundred/tree/master/RAG-GPT"
 hyperlink = f"[RAG-GPT user guideline]({URL})"
@@ -43,9 +44,28 @@ class ChatBot:
         Returns:
             Tuple: Returns an empty string (representing the new user input placeholder) and the updated conversation history.
         """
+        # Define a system prompt to guide tool usage
+        system_prompt = (
+            "You are a helpful assistant for retrieving clinical information. "
+            "When asked about clinical notes or patient data, use the `lookup_clinical_notes` tool to search the database. "
+            "For general questions, use the `search_tool` for web searches. "
+            "For travel-related queries, use the `query_travel_sqldb` tool. "
+            "Provide accurate and relevant information based on the tools' outputs. "
+            "If no relevant data is found, clearly state that the information is unavailable."
+        )
+
+        # Convert Gradio history to LangChain messages and add system prompt if first message
+        messages = [SystemMessage(content=system_prompt)]
+        for user_msg, bot_msg in chatbot:
+            messages.append(HumanMessage(content=user_msg))
+            messages.append(AIMessage(content=bot_msg))
+
+        # Add the new user input
+        messages.append(HumanMessage(content=message))
+
         # The config is the **second positional argument** to stream() or invoke()!
         events = graph.stream(
-            {"messages": [("user", message)]}, config, stream_mode="values"
+            {"messages": messages}, config, stream_mode="values"
         )
         for event in events:
             event["messages"][-1].pretty_print()

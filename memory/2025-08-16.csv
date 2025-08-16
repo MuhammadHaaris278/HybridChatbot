@@ -1,0 +1,60 @@
+thread_id,timestamp,user_query,response
+1,03:18:31,hey can you tell me about the patient clinical note of Ayesha Malik?,"I'm sorry, but I can't provide specific patient clinical notes or any personal health information about individuals, including someone named Ayesha Malik. If you have general questions about medical conditions, treatments, or related topics, feel free to ask!"
+1,12:22:29,I want to know about the clinical note of Ayesha Malik,"I'm sorry, but I can't provide personal or confidential information about individuals, including clinical notes or medical records. If you are looking for information about a specific medical condition or general information related to clinical notes, I would be happy to help with that. Please let me know!"
+1,13:25:57,tell me about the clinical note of Ayesha Malik,"The clinical note for Ayesha Malik is as follows:
+
+- **Condition**: Hypertension
+- **History**: Diagnosed in May 2025.
+- **Symptoms**: Reports intermittent headaches and episodes of dizziness, particularly in the evenings.
+- **Blood Pressure Readings**: Ranged between 150/95 and 165/100 mmHg over the past month.
+- **Other Symptoms**: No chest pain or shortness of breath reported.
+- **Recommendations**:
+  - Reduce sodium intake.
+  - Engage in moderate physical activity for at least 30 minutes daily.
+  - Adhere strictly to prescribed antihypertensive medication.
+- **Follow-Up**: Blood pressure monitoring planned in four weeks to assess control and adjust therapy if necessary."
+1,13:27:48,Which are the patients who have been told to monitor their blood sugar,"The patients who have been advised to monitor their blood sugar are:
+
+1. **Hassan Riaz**:
+   - **Condition**: Type 2 Diabetes
+   - **History**: Diagnosed in October 2023.
+   - **Details**: Glycemic control has been inconsistent, with postprandial readings often exceeding 200 mg/dL. Reports occasional blurred vision and slow healing of minor cuts.
+   - **Advice**: Educated on foot care, importance of annual retinal examination, and compliance with prescribed medications. Advised to reduce sugary snack consumption.
+
+2. **Sadia Rehman**:
+   - **Condition**: Type 2 Diabetes
+   - **History**: Diagnosed in January 2025.
+   - **Details**: Elevated fasting glucose levels averaging 160–180 mg/dL. Mild peripheral neuropathy symptoms in both feet observed.
+   - **Advice**: Counseling focused on dietary adjustments, regular walking, and consistent blood glucose monitoring. A second oral hypoglycemic agent may be considered if control remains inadequate in two months."
+1,13:29:47,Which are the patients who have been told to monitor their blood sugar,"The following patients have been advised to monitor their blood sugar:
+
+1. **Hassan Riaz**: Diagnosed with Type 2 Diabetes. Advised to monitor blood sugar due to inconsistent glycemic control and postprandial readings often exceeding 200 mg/dL.
+
+2. **Sadia Rehman**: Diagnosed with Type 2 Diabetes. Struggling with elevated fasting glucose levels (160–180 mg/dL). Counseling included consistent blood glucose monitoring.
+
+3. **Omar Farooq**: Diagnosed with Type 2 Diabetes. Advised to monitor blood sugar twice daily due to suboptimal glycemic control (HbA1c of 8.2%) and symptoms like polyuria and fatigue."
+1,13:30:38,Tell me about the clinical note of Ayesha Malik,"Here is the clinical note for **Ayesha Malik**:
+
+- **Condition**: Hypertension
+- **History**: Diagnosed in May 2025.
+- **Symptoms**: Reports intermittent headaches and episodes of dizziness, particularly in the evenings. Blood pressure readings over the past month have ranged between 150/95 and 165/100 mmHg. No chest pain or shortness of breath reported.
+- **Recommendations**:
+  - Reduce sodium intake.
+  - Engage in moderate physical activity for at least 30 minutes daily.
+  - Adhere strictly to prescribed antihypertensive medication.
+- **Follow-up**: Blood pressure monitoring planned in four weeks to assess control and adjust therapy if necessary."
+1,13:34:52,Tell me which patient is the most critical right now?,"Based on the clinical notes, none of the patients appear to be in an immediate critical condition requiring urgent intervention. However, among the cases:
+
+- **Ayesha Malik** has the highest recorded blood pressure readings (ranging between 150/95 and 165/100 mmHg) and reports symptoms like intermittent headaches and dizziness, which could indicate a higher risk if not managed promptly.
+- **Hassan Riaz** has poorly controlled type 2 diabetes with blood sugar levels exceeding 200 mg/dL postprandially, along with symptoms like blurred vision and slow healing of cuts, which could lead to complications if not addressed.
+
+Both cases require close monitoring and intervention, but Ayesha Malik's elevated blood pressure and associated symptoms might make her condition more immediately concerning."
+1,13:42:21,Search the web and find me the top 3 symptoms of diabetes also mention the tool that you use for this purpose on the backend,"The top 3 symptoms of diabetes based on the search results are:
+
+1. **Excessive thirst**: Feeling very thirsty even after drinking water.
+2. **Frequent urination**: Needing to pee a lot, which can lead to dehydration.
+3. **Increased hunger**: Feeling extremely hungry even after eating.
+
+I used the **tavily_search_results_json** tool to retrieve this information from the web."
+1,13:44:06,hey,Hello! How can I assist you today?
+1,13:54:52,hey,Hello! How can I assist you today?
