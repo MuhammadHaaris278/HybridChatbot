@@ -53,18 +53,16 @@ To set up the project, follow these steps:
    pip install -r requirements.txt
    ```
 
-5. Download the travel sql database from this link and paste it into the `data` folder.
+5. Download a sql database from and paste it into the `data` folder.
 
-6. Download the chinook SQL database from this link and paste it into the `data` folder.
+6. Prepare the `.env` file and add your `OPEN_AI_API_KEY`, `TAVILY_API_KEY`, and `LANGCHAIN_API_KEY`.
 
-7. Prepare the `.env` file and add your `OPEN_AI_API_KEY`, `TAVILY_API_KEY`, and `LANGCHAIN_API_KEY`.
-
-8. Run `prepare_vector_db.py` module once to prepare both vector databases.
+7. Run `prepare_vector_db.py` module once to prepare the vector database.
    ```bash
    python src\prepare_vector_db.py
    ```
 
-9. Run the app:
+8. Run the app:
    ```bash
    python src\app.py
    ```
@@ -90,7 +88,7 @@ For unstructured data using Retrieval-Augmented Generation (RAG):
 
 All configurations are managed through YAML files in the `configs` folder, loaded by `src\chatbot\load_config.py` and `src\agent_graph\load_tools_config.py`. These modules are used for a clean distribution of configurations throughout the project.
 
-Once your databases are ready, you can either connect the current agents to the databases or create new agents. More details can be found in the accompanying YouTube video.
+Once your databases are ready, you can either connect the current agents to the databases or create new agents.
 
 ## Key Frameworks and Libraries
 
